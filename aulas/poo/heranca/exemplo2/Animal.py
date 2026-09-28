@@ -1,5 +1,5 @@
 # CLASSE PAI
-class Animal():
+class Animal:
     def __init__(self, tipo, idade, regiao):
         self._tipo = tipo # protected
         self.__idade = idade # private

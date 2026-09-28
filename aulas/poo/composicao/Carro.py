@@ -25,8 +25,9 @@ class Motor:
         return self.__estado_motor
 
     @estado_motor.setter
-    def estado_motor(self, value):
-        self.__estado_motor = value
+    def estado_motor(self, value: float):
+        if type(self.tipo_motor) == int:
+            self.__estado_motor = value
 
     def arrumar_motor(self):
         if self.estado_motor == "quebrado":

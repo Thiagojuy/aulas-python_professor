@@ -65,3 +65,11 @@ class Comprador:
                      1)
     outra_compra.nome_loja = "Honda"
     print(outra_compra.__dict__)
+
+    with open("texto.txt", "w") as file:
+        compra = Produto("Shampoo",
+                         30.00,
+                         100)
+        file.write(f"\nNome da Loja:{compra.nome_loja}")
+        file.write(f"\nNome do produto:{compra.nome}")
+        file.write(f"\nValor do produto:{compra.preco}")

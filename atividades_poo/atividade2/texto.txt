@@ -1,0 +1,4 @@
+
+Nome da Loja:Atacadão
+Nome do produto:Shampoo
+Valor do produto:30.0

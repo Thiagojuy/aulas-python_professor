@@ -15,8 +15,6 @@ while True:
 with open("carrinho.txt", 'w', encoding='utf-8') as arquivo:
     arquivo.write("RECIBO DO CARRINHO\n\n")
 
-    arquivo.write(str(carrinho[0]))
-
     for produto in carrinho:
         nome_produto = produto[0]
         preco_produto = produto[1]

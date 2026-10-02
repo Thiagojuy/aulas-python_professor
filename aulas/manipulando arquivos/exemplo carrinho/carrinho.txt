@@ -1,9 +1,8 @@
 RECIBO DO CARRINHO
 
-['Macarrão', 4.99]Produto: Macarrão R$4.99
-Produto: Leite R$5.90
-Produto: Cereal R$20.00
-Produto: Arroz R$15.99
-Produto: Açúcar R$12.66
+Produto: Pao R$5.00
+Produto: Farinha R$6.99
+Produto: Arroz R$22.00
+Produto: Feijao R$10.00
 
-Total a pagar: 59.54
+Total a pagar: 44.99

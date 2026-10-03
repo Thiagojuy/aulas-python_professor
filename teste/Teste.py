@@ -1,13 +1,9 @@
-class Teste:
-    def __init__(self, nome):
-        self.__nome = nome
+class Valor:
+    def __init__(self, valor):
+        try:
+            self.valor = float(valor)
+        except ValueError:
+            print("Valor não aceito")
 
-    @property
-    def nome(self):
-        return self.__nome
 
-obj = Teste("João")
-
-obj._Teste__nome = "Felipe"
-
-print(obj.__dict__)
+valor1 = Valor("Vinte e três")

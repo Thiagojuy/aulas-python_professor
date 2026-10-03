@@ -1,8 +1,7 @@
 RECIBO DO CARRINHO
 
-Produto: Pao R$5.00
-Produto: Farinha R$6.99
-Produto: Arroz R$22.00
-Produto: Feijao R$10.00
+Produto: Sal R$10.00
+Produto: Leite R$6.99
+Produto: Açúcar R$15.99
 
-Total a pagar: 44.99
+Total a pagar: 32.98

@@ -46,11 +46,23 @@ def maior_media():
     turma_digitada = input('Digite o turma do aluno: ')
     with open('alunos.txt', 'r', encoding='utf-8') as arquivo:
         lista_alunos = arquivo.readlines()
+        lista_media_alunos = []
+        aluno_destaque = []
+        maior_media = 0
 
         for aluno in lista_alunos:
             aluno = aluno.strip().split(';')
             if aluno[1] == turma_digitada:
                 media = (float(aluno[2]) + float(aluno[3]) + float(aluno[4]) + float(aluno[5])) / 4
+                nome = aluno[0]
+                lista_media_alunos.append([nome, media])
+
+                if media > maior_media:
+                    maior_media = media
+                    aluno_destaque.append(aluno[0])
+                    aluno_destaque.append(media)
+
+        print(f"A maior maior media foi o aluno {aluno_destaque[2]} com a média {aluno_destaque[3]}")
 
 # SISTEMA
 while True: # loop infinito

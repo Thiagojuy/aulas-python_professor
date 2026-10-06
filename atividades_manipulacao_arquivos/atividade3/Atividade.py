@@ -62,7 +62,9 @@ def maior_media():
                     aluno_destaque.append(aluno[0])
                     aluno_destaque.append(media)
 
-        print(f"A maior maior media foi o aluno {aluno_destaque[2]} com a média {aluno_destaque[3]}")
+        len_nome = (len(aluno_destaque) - 2)
+        len_media = (len(aluno_destaque) - 1)
+        print(f"A maior maior media foi o aluno {aluno_destaque[len_nome]} com a média {aluno_destaque[len_media]}")
 
 # SISTEMA
 while True: # loop infinito

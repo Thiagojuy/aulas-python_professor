@@ -1,0 +1,17 @@
+[
+    {
+        "produto": "Frango",
+        "preco": 20.0,
+        "em_estoque": true
+    },
+    {
+        "produto": "Carne",
+        "preco": 45.0,
+        "em_estoque": true
+    },
+    {
+        "produto": "Arroz",
+        "preco": 16.0,
+        "em_estoque": true
+    }
+]

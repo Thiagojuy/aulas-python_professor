@@ -1,3 +1,5 @@
+# from -> nome do arquivo
+# import -> nome da Classe
 from Animal import Animal
 
 class Baleia(Animal):

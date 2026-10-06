@@ -18,17 +18,28 @@ dados_dicionario = [
         'produto': 'Arroz',
         'preco': 16.00,
         'em_estoque': True
+    },
+    {
+        'produto': 'Carvão',
+        'preco': 25.00,
+        'em_estoque': True
+    },
+    {
+        'produto': 'Açái',
+        'preco': 50.00,
+        'em_estoque': True
     }
+
 ]
 
 # escreve um documento json
 # dump -> transforma um dicionário em json
 with open('json_file.json', 'w', encoding='utf-8') as arquivo:
-    json.dump(dados_dicionario, arquivo, ensure_ascii=True, indent=4)
+    json.dump(dados_dicionario, arquivo, ensure_ascii=False, indent=4)
     print("Arquivo escrito\n")
 
 # lê o documento json
-# .load -> transforma o arquivo JSON em dicionário python
+# load -> transforma o arquivo JSON em dicionário python
 with open('json_file.json', 'r', encoding='utf-8') as arquivo:
     novo_dicionario = json.load(arquivo)
 

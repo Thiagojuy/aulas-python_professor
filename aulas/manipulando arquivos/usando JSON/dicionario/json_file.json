@@ -13,5 +13,15 @@
         "produto": "Arroz",
         "preco": 16.0,
         "em_estoque": true
+    },
+    {
+        "produto": "Carvão",
+        "preco": 25.0,
+        "em_estoque": true
+    },
+    {
+        "produto": "Açái",
+        "preco": 50.0,
+        "em_estoque": true
     }
 ]

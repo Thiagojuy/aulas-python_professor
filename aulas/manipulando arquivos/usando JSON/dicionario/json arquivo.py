@@ -15,21 +15,21 @@ dados_dicionario = [
         'em_estoque': True
     },
     {
+        'produto': 'Carne',
+        'preco': 45.00,
+        'em_estoque': True,
+        'tipo': "Peixe"
+    },
+    {
         'produto': 'Arroz',
         'preco': 16.00,
         'em_estoque': True
     },
     {
-        'produto': 'Carvão',
+        'produto': 'Carvao',
         'preco': 25.00,
         'em_estoque': True
-    },
-    {
-        'produto': 'Açái',
-        'preco': 50.00,
-        'em_estoque': True
     }
-
 ]
 
 # escreve um documento json
@@ -43,16 +43,27 @@ with open('json_file.json', 'w', encoding='utf-8') as arquivo:
 with open('json_file.json', 'r', encoding='utf-8') as arquivo:
     novo_dicionario = json.load(arquivo)
 
-# with open('json_file.json', 'a', encoding='utf-8') as arquivo:
-#     texto_adicinoal = json.dumps('[{"produto": "Arroz","preco": 50, "em_estoque": true}]', ensure_ascii=False, indent=1)
-#     novo_obj = json.loads(texto_adicinoal)
-#
-#     json.dump(novo_obj, arquivo, ensure_ascii=False, indent=1)
-#     print("Arquivo adicionado\n")
-
 # dumps -> transforma o texto python em arquivo json
 for produto in novo_dicionario:
-    print(f'Dicionário: {produto}')
-    print(f"Arquivo JSON {json.dumps(produto, indent=1)}")
+    if produto['produto'] == 'Carvao':
+        produto['em_estoque'] = False
+        produto['preco'] = 19.99
+        produto['tipo'] = "Vegetal"
 
     print(produto['preco'])
+
+with open('json_file.json', 'w', encoding='utf-8') as arquivo:
+    json.dump(novo_dicionario, arquivo, ensure_ascii=False, indent=1)
+
+dados_dicionario.append({
+    'produto': 'Feijão',
+    'preco': 199.99,
+    'em_estoque': True
+})
+
+for produto in dados_dicionario:
+    if produto['produto'] == 'Carne':
+        produto['em_estoque'] = False
+
+with open('json_file.json', 'w', encoding='utf-8') as arquivo:
+    json.dump(dados_dicionario, arquivo, ensure_ascii=False, indent=4)

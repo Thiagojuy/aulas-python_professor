@@ -7,7 +7,13 @@
     {
         "produto": "Carne",
         "preco": 45.0,
-        "em_estoque": true
+        "em_estoque": false
+    },
+    {
+        "produto": "Carne",
+        "preco": 45.0,
+        "em_estoque": false,
+        "tipo": "Peixe"
     },
     {
         "produto": "Arroz",
@@ -15,13 +21,13 @@
         "em_estoque": true
     },
     {
-        "produto": "Carvão",
+        "produto": "Carvao",
         "preco": 25.0,
         "em_estoque": true
     },
     {
-        "produto": "Açái",
-        "preco": 50.0,
+        "produto": "Feijão",
+        "preco": 199.99,
         "em_estoque": true
     }
 ]
